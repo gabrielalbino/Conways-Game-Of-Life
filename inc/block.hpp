@@ -8,5 +8,6 @@ class Block : public Universo{
 public:
 //	CelulaMatrix makeABlock(Celula universoAntigo[ALTURA][LARGURA], int x, int y);
 	CelulaMatrix makeABlock(CelulaMatrix universoAntigo, int x, int y);	
+	CelulaMatrix deleteABlock(CelulaMatrix universoAntigo, int x, int y);
 };
 #endif
