@@ -7,5 +7,6 @@
 class Blinker : public Universo{
 public:
 	CelulaMatrix makeABlinker(CelulaMatrix universoAntigo, int x, int y);
+	CelulaMatrix deleteABlinker(CelulaMatrix universoAntigo, int x, int y);
 };
 #endif
