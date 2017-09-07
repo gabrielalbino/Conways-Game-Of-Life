@@ -5,6 +5,8 @@ Universo::Universo(){
 	for(x = 0; x < ALTURA; x++){
 		for(y = 0; y < LARGURA; y++){
 			uni[x][y].setAlive(false);
+			uni[x][y].setX(x);
+			uni[x][y].setY(y);
 		}
 	}
 }
