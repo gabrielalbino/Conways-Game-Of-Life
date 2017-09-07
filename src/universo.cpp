@@ -14,7 +14,7 @@ Universo::Universo(){
 CelulaMatrix Universo::getUniverso(){
 	return uni;
 }
-
+/*
 void Universo::setUniverso(CelulaMatrix uni){
 	int x, y;
         for(x = 0; x < ALTURA; x++){
@@ -25,7 +25,7 @@ void Universo::setUniverso(CelulaMatrix uni){
                 }
         }
 }
-
+*/
 void Universo::setUniverso(Celula uni[ALTURA][LARGURA]){
         int x, y;
         for(x = 0; x < ALTURA; x++){
