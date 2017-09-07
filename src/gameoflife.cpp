@@ -25,5 +25,10 @@ void GameOfLife::setForma(int forma, int x, int y){
 		setUniverso(gliderObj.makeAGlider(getUniverso(),x,y));
 		break;
 	}
+	case 5:{
+		GosperGliderGun gosperObj;
+		setUniverse(gosperObj.makeAGosperGliderGun(getUniverso(),x,y));
+		break;
+	}
 	}
 }
