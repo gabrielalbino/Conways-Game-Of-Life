@@ -15,6 +15,7 @@ public:
 
 	CelulaMatrix getUniverso();
 	void setUniverso(CelulaMatrix uni);
+	void setUniverso(Celula uni[ALTURA][LARGURA]);
 	void printUniverso();
 };
 

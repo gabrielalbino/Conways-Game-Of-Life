@@ -26,6 +26,17 @@ void Universo::setUniverso(CelulaMatrix uni){
         }
 }
 
+void Universo::setUniverso(Celula uni[ALTURA][LARGURA]){
+        int x, y;
+        for(x = 0; x < ALTURA; x++){
+                for(y = 0; y < LARGURA; y++){
+                        this-> uni[x][y].setX(uni[x][y].getX());
+                        this-> uni[x][y].setY(uni[x][y].getY());
+                        this-> uni[x][y].setAlive(uni[x][y].getAlive());
+                }
+	}
+}
+
 void Universo::printUniverso(){
         int x, y;
         for(x = 0; x < ALTURA; x++){
