@@ -8,6 +8,7 @@ void GameOfLife::setForma(int forma, int x, int y){
 	case 1:{
 		if(x >= 0 && y >= 0 && x < ALTURA && y < LARGURA)
 			getUniverso()[x][y].setAlive(true);
+		break;
 	}
 	case 2:{
 		Block blockObj;
