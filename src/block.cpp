@@ -16,7 +16,7 @@ CelulaMatrix Block::makeABlock(Celula UniversoAntigo[ALTURA][LARGURA], int x, in
 */
 CelulaMatrix Block::makeABlock(CelulaMatrix UniversoAntigo, int x, int y){
         setUniverso(UniversoAntigo);
-        if(x < 0 || y < 0 || x > ALTURA-1 || y > LARGURA-1){
+        if(x < 0 || y < 0 || x >= ALTURA-1 || y >= LARGURA-1){
                 std::cout << "Não foi possível gerar um block nas coordenadas (" << x << "," << y << ")" << std::endl;
                 return getUniverso();
         }
