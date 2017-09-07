@@ -26,5 +26,30 @@ void GameOfLife::setForma(int forma, int x, int y){
 		setUniverso(gosperObj.makeAGosperGliderGun(getUniverso(),x,y));
 		break;
 	}
+        case 6:{
+                if(x >= 0 && y >= 0 && x < ALTURA && y < LARGURA)
+                        getUniverso()[x][y].setAlive(false);
+                break;
+        }
+        case 7:{
+                Block blockObj;
+                setUniverso(blockObj.deleteABlock(getUniverso(), x, y));
+                break;
+        }
+        case 8:{
+                Blinker blinkerObj;
+                setUniverso(blinkerObj.deleteABlinker(getUniverso(),x,y));
+                break;
+        }
+        case 9:{
+                Glider gliderObj;
+                setUniverso(gliderObj.deleteAGlider(getUniverso(),x,y));
+                break;
+        }
+        case 10:{
+                GosperGliderGun gosperObj;
+                setUniverso(gosperObj.deleteAGosperGliderGun(getUniverso(),x,y));
+                break;
+        }
 	}
 }
