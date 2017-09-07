@@ -1,8 +1,4 @@
 #include "gameoflife.hpp"
-#include "block.hpp"
-#include "blinker.hpp"
-#include "glider.hpp"
-
 void GameOfLife::setForma(int forma, int x, int y){
 	switch(forma){
 	case 1:{
@@ -27,7 +23,7 @@ void GameOfLife::setForma(int forma, int x, int y){
 	}
 	case 5:{
 		GosperGliderGun gosperObj;
-		setUniverse(gosperObj.makeAGosperGliderGun(getUniverso(),x,y));
+		setUniverso(gosperObj.makeAGosperGliderGun(getUniverso(),x,y));
 		break;
 	}
 	}

@@ -2,6 +2,11 @@
 #define GAMEOFLIFE
 
 #include "universo.hpp"
+#include "block.hpp"
+#include "blinker.hpp"
+#include "glider.hpp"
+#include "gosperglidergun.hpp"
+
 
 class GameOfLife : public Universo{
 public:
