@@ -37,3 +37,40 @@ CelulaMatrix GosperGliderGun::makeAGosperGliderGun(CelulaMatrix universoAntigo, 
         getUniverso()[x+2][y+34].setAlive(true);
         return getUniverso();
 }
+
+CelulaMatrix GosperGliderGun::deleteAGosperGliderGun(CelulaMatrix universoAntigo, int x, int y){
+        setUniverso(universoAntigo);
+        if(x < 0 || y < 0 || x > ALTURA-9 || y > LARGURA-35){
+                std::cout << "Não foi possível deletar uma gosper glider gun nas coordenadas (" << x << "," << y << ")" << std::endl;
+                return getUniverso();
+        }
+        Block blockObj;
+        Blinker blinkerObj;
+
+        setUniverso(blockObj.deleteABlock(getUniverso(), x+4, y));
+        setUniverso(blinkerObj.deleteABlinker(getUniverso(), x+5, y+10));
+        setUniverso(blinkerObj.deleteABlinker(getUniverso(), x+5, y+16));
+        setUniverso(blinkerObj.deleteABlinker(getUniverso(), x+3, y+20));
+        setUniverso(blinkerObj.deleteABlinker(getUniverso(), x+3, y+21));
+        setUniverso(blockObj.deleteABlock(getUniverso(), y+2, y+34));
+
+        getUniverso()[x+3][y+11].setAlive(false);
+        getUniverso()[x+7][y+11].setAlive(false);
+        getUniverso()[x+2][y+12].setAlive(false);
+        getUniverso()[x+8][y+12].setAlive(false);
+        getUniverso()[x+2][y+13].setAlive(false);
+        getUniverso()[x+8][y+13].setAlive(false);
+        getUniverso()[x+5][y+14].setAlive(false);
+        getUniverso()[x+3][y+15].setAlive(false);
+        getUniverso()[x+7][y+15].setAlive(false);
+        getUniverso()[x+5][y+17].setAlive(false);
+        getUniverso()[x+1][y+22].setAlive(false);
+        getUniverso()[x+5][y+22].setAlive(false);
+        getUniverso()[x][y+24].setAlive(false);
+        getUniverso()[x+1][y+24].setAlive(false);
+        getUniverso()[x+5][y+24].setAlive(false);
+        getUniverso()[x+6][y+24].setAlive(false);
+        getUniverso()[x+2][y+34].setAlive(false);
+        return getUniverso();
+}
+

@@ -7,5 +7,6 @@
 class GosperGliderGun : public Universo{
 public:
 	CelulaMatrix makeAGosperGliderGun(CelulaMatrix universoAntigo, int x, int y);
+	CelulaMatrix deleteAGosperGliderGun(CelulaMatrix universoAntigo, int x, int y);
 };
 #endif
