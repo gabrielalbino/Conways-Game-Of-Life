@@ -1,9 +1,7 @@
 #include "celula.hpp"
 
-Celula::Celula(bool isAlive, int x, int y){
-	this-> isAlive = isAlive;
-	this-> x = x;
-	this-> y = y;
+Celula::Celula(){
+	this-> isAlive = false;
 }
 
 bool Celula::getAlive(){
@@ -18,8 +16,16 @@ int Celula::getX(){
 	return x;
 }
 
+void Celula::setX(int x){
+	this-> x = x;
+}
+
 int Celula::getY(){
 	return y;
+}
+
+void Celula::setY(int y){
+	this-> y = y;
 }
 
 void Celula::checkSurvival(Celula universo[ALTURA][LARGURA]){
