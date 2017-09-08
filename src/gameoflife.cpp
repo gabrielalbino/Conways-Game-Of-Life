@@ -53,3 +53,22 @@ void GameOfLife::setForma(int forma, int x, int y){
         }
 	}
 }
+
+void GameOfLife::erase(){
+	for(int x = 0; x < ALTURA; x++){
+		for(int y = 0; y < LARGURA; y++){
+			getUniverso()[x][y].setAlive(false);
+		}
+	}
+}
+
+void GameOfLife::run(){
+	Universo temp;
+	temp.setUniverso(getUniverso());
+        for(int x = 0; x < ALTURA; x++){
+                for(int y = 0; y < LARGURA; y++){
+                        temp.getUniverso()[x][y].checkSurvival(getUniverso());
+                }
+        }
+	setUniverso(temp.getUniverso());
+}
