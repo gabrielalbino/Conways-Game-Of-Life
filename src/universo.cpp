@@ -42,7 +42,7 @@ void Universo::printUniverso(){
         for(x = 0; x < ALTURA; x++){
                 for(y = 0; y < LARGURA; y++){
 			if(uni[x][y].getAlive()) std::cout << "\u25AA";
-			else std::cout << "\u25AB";
+			else std::cout << " ";
                 }
 	std::cout << std::endl;
         }
