@@ -16,7 +16,7 @@ CelulaMatrix GosperGliderGun::makeAGosperGliderGun(CelulaMatrix universoAntigo, 
         setUniverso(blinkerObj.makeABlinker(getUniverso(), x+5, y+16));
         setUniverso(blinkerObj.makeABlinker(getUniverso(), x+3, y+20));
         setUniverso(blinkerObj.makeABlinker(getUniverso(), x+3, y+21));
-        setUniverso(blockObj.makeABlock(getUniverso(), y+2, y+34));
+        setUniverso(blockObj.makeABlock(getUniverso(), x+2, y+34));
 
         getUniverso()[x+3][y+11].setAlive(true);
         getUniverso()[x+7][y+11].setAlive(true);
