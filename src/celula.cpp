@@ -100,4 +100,7 @@ void Celula::checkSurvival(Celula universo[ALTURA][LARGURA]){
 	else if(getAlive() == false && contador == 3){
 		setAlive(true);
 	}
+	else if(getAlive() == true && (contador == 3 || contador == 2)){
+		setAlive(true);
+	}
 }
