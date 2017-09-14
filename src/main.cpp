@@ -29,7 +29,7 @@ int main(){
 		cout << "Opção: ";
 		cin >> opcao;
 		if(opcao > 0 && opcao <= 10){
-			cout << "Insira as coordenadas X e Y: ";
+			cout << "Insira as coordenadas X (1 a 25) e Y (1 a 50): ";
 			cin >> x >> y;
 			jogoDaVida.setForma(opcao, x-1, y-1);
 		}
