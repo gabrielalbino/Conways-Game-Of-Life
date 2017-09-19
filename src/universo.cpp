@@ -39,11 +39,20 @@ void Universo::setUniverso(Celula uni[ALTURA][LARGURA]){
 
 void Universo::printUniverso(){
         int x, y;
+	std::cout << "╔";
+	for(x = 0; x < LARGURA; x++)
+		std::cout << "═";
+	std::cout << "╗\n";
         for(x = 0; x < ALTURA; x++){
+		std::cout << "║";
                 for(y = 0; y < LARGURA; y++){
 			if(uni[x][y].getAlive()) std::cout << "\u25AA";
 			else std::cout << " ";
                 }
-	std::cout << std::endl;
+	std::cout << "║" << std::endl;
         }
+	std::cout << "╚";
+	for(x = 0; x < LARGURA; x++)
+		std::cout << "═";
+	std::cout << "╝" << std::endl;
 }
