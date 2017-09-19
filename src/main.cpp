@@ -39,7 +39,7 @@ int main(){
 	for(aux = 0; aux < nroGer; aux++){
 	        cout << "\033[2J";
                 cout << "\033[0;0f";
-		std::this_thread::sleep_for(std::chrono::milliseconds(200));
+		std::this_thread::sleep_for(std::chrono::milliseconds(50));
 		jogoDaVida.run();
 		jogoDaVida.printUniverso();
 	}
