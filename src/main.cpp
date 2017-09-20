@@ -16,11 +16,11 @@ int main(){
 		cout << endl;
 		cout << "Escolha uma opção:\n";
 		cout << "0 - Encerrar Modificações no universo celular\n";
-		cout << "1 - Adcionar uma celula no universo celular\n";
-		cout << "2 - Adcionar um block no universo celular\n";
-		cout << "3 - Adcionar um blinker no universo celular\n";
-		cout << "4 - Adcionar um glider no universo celular\n";
-		cout << "5 - Adcionar uma gosperGliderGun no universo celular\n";
+		cout << "1 - Adicionar uma celula no universo celular\n";
+		cout << "2 - Adicionar um block no universo celular\n";
+		cout << "3 - Adicionar um blinker no universo celular\n";
+		cout << "4 - Adicionar um glider no universo celular\n";
+		cout << "5 - Adicionar uma gosperGliderGun no universo celular\n";
 		cout << "6 - Remover uma celula do universo celular\n";
 		cout << "7 - Remover um block do universo celular\n";
 		cout << "8 - Remover um blinker do universo celular\n";

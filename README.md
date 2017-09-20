@@ -22,41 +22,41 @@ Uma breve descrição dos itens do menu:
 
 Acaba com a possíbilidade de modificar o campo celular, perguntando quantas iterações você deseja e iniciando o jogo.
 
-**1 - Adcionar uma celula no universo celular**
+**1 - Adicionar uma celula no universo celular**
 
-Adciona uma única celula na posição escolhida do seu campo celular.
+Adiciona uma única celula na posição escolhida do seu campo celular.
 
 Exemplo:
 
 ![1](https://i.imgur.com/sBb6g3j.png)
 
-**2 - Adcionar um block no universo celular**
+**2 - Adicionar um block no universo celular**
 
-Adciona um Block na posição escolhida do seu campo celular.
+Adiciona um Block na posição escolhida do seu campo celular.
 
 Exemplo:
 
 ![1](https://i.imgur.com/Wkx7pC2.png)
 
-**3 - Adcionar um blinker no universo celular**
+**3 - Adicionar um blinker no universo celular**
 
-Adciona um Blinker na posição escolhida do seu campo celular.
+Adiciona um Blinker na posição escolhida do seu campo celular.
 
 Exemplo:
 
 ![1](https://i.imgur.com/vR3Uk4k.png)
 
-**4 - Adcionar um glider no universo celular**
+**4 - Adicionar um glider no universo celular**
 
-Adciona um Glider na posição escolhida do seu campo celular.
+Adiciona um Glider na posição escolhida do seu campo celular.
 
 Exemplo:
 
 ![1](https://i.imgur.com/Loz5ght.png)
 
-**5 - Adcionar uma gosperGliderGun no universo celular**
+**5 - Adicionar uma gosperGliderGun no universo celular**
 
-Adciona uma GosperGliderGun na posição escolhida do seu campo celular.
+Adiciona uma GosperGliderGun na posição escolhida do seu campo celular.
 
 Exemplo:
 
