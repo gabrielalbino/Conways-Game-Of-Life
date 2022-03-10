@@ -1,8 +1,4 @@
-# Aplicação do Conway's Game of Life em C++
-
-## Sobre o autor:
-
-Gabriel Batista Albino Silva, 16/0028361
+# Conway's Game of Life in C++
 
 ## O que é o Conway's Game of Life?
 
